@@ -134,6 +134,21 @@
 /** ------------------------------------------------
 	RESUME SECTIONS
 	------------------------------------------------**/
+#nav {
+	background-color: white;
+	position: fixed;
+	top: 135px;
+	left: 950px;
+	width: 100px;
+	border: 1px dashed black;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
 .hidden {
 	display: none;
 }
@@ -144,14 +159,14 @@
 }
 
 .resumeSection {
-	margin: 0px 20px 0px 20px;
+	margin: 0 110px 0 20px;
 	text-align: left;
-	padding: 130px 0px 0px 0px;
+	padding: 130px 0 0 0;
 }
 
 .wrapper {
 	margin: 0 20px 0 0;
-	padding: 0px;
+	padding: 0;
 }
 
 h2 {

@@ -23,6 +23,14 @@ $(document).ready(function() {
 		var pI = Processing.getInstanceById('zombieCanvas');
 		pI.setup();
 	});
+
+	//Navigation
+	$('nav ul li').click(function() {
+		var section = $(this).attr('value');
+		$('.wrapper').addClass('hidden');
+		$('#'+section).next().removeClass('hidden');
+		$('#'+section).next().children().removeClass('hidden');
+	});
 });
 
 //Show correct resume section
