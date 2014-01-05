@@ -17,13 +17,13 @@
 
 #pageContainer {
 	position: relative;
-	left: 50px;
 	width: 950px;
 	min-height: 100%;
-	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
-	-webkit-box-shadow: -10px 0 20px -5px #cccccc;
-	box-shadow: -10px 0 20px -5px #cccccc;
+	-webkit-box-shadow: 0 0 30px #888;
+	box-shadow: 0 0 30px #888;
 }
 
 /** ------------------------------------------------
@@ -144,14 +144,13 @@
 }
 
 .resumeSection {
-	width: 730px;
-	margin: 0px 0px 0px 20px;
+	margin: 0px 20px 0px 20px;
 	text-align: left;
 	padding: 130px 0px 0px 0px;
 }
 
 .wrapper {
-	margin: 0px;
+	margin: 0 20px 0 0;
 	padding: 0px;
 }
 
@@ -164,6 +163,7 @@ h2 {
 	padding: 5px 10px;
 	margin: 15px 0px 0px 0px;
 	overflow: hidden;
+	clear: both;
 }
 
 h3 {
@@ -197,25 +197,83 @@ li div {
 	min-width: 70px;
 }
 
-#projects img {
+#tttImgWrap {
 	margin:  5px 10px 5px 20px;
-	float: left;
+	float: right;
+}
+
+#tttImgWrap img {
+	display: block;
+	margin: 5px auto;
+}
+
+#tttImgWrap a {
+	text-decoration: none;
+	color: black;
+}
+
+#tttPlay {
+	width: 80px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #tttContainer {
-	width: 390px;
-}
-
-#tttContainer p {
-	margin: 0px 0px 0px 20px;
+	margin-right: 315px;
+	height: 235px;
 }
 
 #projects div h4 {
-	clear: both;
-		margin: 0px 0px 0px 20px;
+	margin: 0px 0px 0px 20px;
 }
 
 .column {
 	display: inline-block;
+	vertical-align: top;
 	margin: 0 0 0 20px;
+}
+
+.indentP {
+	margin: 0px 0px 0px 20px;
+}
+
+/** ------------------------------------------------
+	ZOMBIE SECTIONS
+	------------------------------------------------**/
+
+#zombieWrapper {
+	width: 250px;
+	height: 280px;
+	float: right;
+}
+
+#zombieCanvas {
+	display: block;
+	margin: 5px auto;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px #888;
+}
+
+.button {
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 1px 4px 1px 4px;
+	box-shadow: 2px 2px 2px #cccccc;
+	cursor: pointer;
+}
+
+#restartZombies {
+	width: 50px;
+	margin: 0 auto;
+}
+
+#zombieText {
+	margin-right: 260px;
+	height: 290px;
+}
+
+#zombieText p {
+	margin: 0px 0px 0px 20px;
 }

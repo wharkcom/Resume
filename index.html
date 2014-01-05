@@ -34,6 +34,7 @@
             <div id='scienceMenu' class='menuOption'>Science</div>
         </div>
 
+        <!--Resume Section-->
         <div id='resume' class='resumeSection hidden'>
         <!--Education Section Begins-->
             <h2 id='education'>EDUCATION
@@ -101,6 +102,7 @@
                         </li>
                         <li>Python</li>
                         <li>Java (basic)</li>
+                        <li>Processing (basic)</li>
                         <li>R (basic)</li>
                     </ul>
 
@@ -154,27 +156,32 @@
                         </li>
                     </ul>
                 </div>
-
             </div> <!--Skills Wrapper-->
+        </div> 
 
-        </div> <!--Resume Section-->
-
+        <!--Project Section-->
         <div id='projects' class='resumeSection'>
+        <!--TicTacToe Section-->
             <h2 id='tictactoe'>Ultimate Tic-Tac-Toe
                 <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
             </h2>
             <div class='wrapper'>
-                <a href='http://tictactoe.wharkcom.com' target='_blank'>
-                <img src='tictactoe_small.png' alt='TicTacToe Image' /></a>
-                <div id='tttContainer' class='floatLeft'>
+                <div id='tttImgWrap'>
+                    <img src='tictactoe_small.png' alt='TicTacToe Image' />
+                    <a href='http://tictactoe.wharkcom.com' target='_blank'>
+                        <div id='tttPlay' class='button'>Play Game</div>
+                    </a>
+                </div>
+
+                <div id='tttContainer'>
                     <h4>Project Goals</h4>
-                    <p>
-                        The goal for this project was to strenghten my knowledge of JavaScript and Node.js by building a simple, web-based game. 
+                    <p class='indentP'>
+                        The goal for this project was to strengthen my knowledge of JavaScript and Node.js by building a simple, web-based game. 
                     </p><br>
-                    <p>
+                    <p class='indentP'>
                         I chose Ultimate Tic-Tac-Toe so that I could focus on **fundamentals** rather than complex game logic.
                     </p><br>
-                    <p>
+                    <p class='indentP'>
                         This project demonstrates my ability to develop a complex web application.
                     </p>
                 </div>
@@ -183,6 +190,7 @@
                 <div class='column'>
                     <ul>
                         <li>HTML/CSS</li>
+                        <li>Canvas</li>
                         <li>JavaScript</li>
                         <li>jQuery</li>
                     </ul>
@@ -196,18 +204,51 @@
                 </div>
 
                 <h4>Design</h4>
-                <div class='column'>
-                    <p>
-                        Talk about design here
-                    </p>
-                </div>
+                <p class='indentP'>
+                    Talk about design here
+                </p>
             </div>
-        </div> <!--Project Section-->
+
+        <!--Zombies Section-->
+            <h2 id='zombies'>Zombie Chase
+                <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
+            </h2>
+            <div class='wrapper'>
+
+                <div id='zombieWrapper'>
+                    <canvas id='zombieCanvas' data-processing-sources='zombies_resume.pde'></canvas>
+                    <div class='button' id='restartZombies'>Restart</div>
+                </div>
+
+                <div id='zombieText'>
+                    <h4>Project Goals</h4>
+                    <p class='indentP'>
+                        Stuff about goals here
+                    </p><br>
+
+                    <h4>Technologies Used</h4>
+                    <div class='column'>
+                        <ul>
+                            <li>Processing</li>
+                        </ul>
+                    </div>
+                    <div class='column'>
+                        <ul>
+                            <li>Processing.js</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4>Design</h4>
+                <p class='indentP'>
+                    Talk about design stuff here
+                </p><br>
+            </div>
+        </div> <!--End Projects Container-->
     </div> <!--Page Container-->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="processing-1.4.1.min.js"></script>
     <script src='main.js'></script>
 
-    
 </body>
 </html>
