@@ -11,7 +11,7 @@
 	width: 99%;
 	min-width: 1000px;
 	height: 100%;
-
+	overflow-y: scroll;
 	font-family: Cambria, Georgia, Arial, Serif;
 }
 
@@ -220,7 +220,7 @@ li div {
 
 #tttContainer {
 	margin-right: 315px;
-	height: 235px;
+
 }
 
 #projects div h4 {
@@ -233,7 +233,7 @@ li div {
 	margin: 0 0 0 20px;
 }
 
-.indentP {
+p {
 	margin: 0px 0px 0px 20px;
 }
 
@@ -274,6 +274,34 @@ li div {
 	height: 290px;
 }
 
-#zombieText p {
-	margin: 0px 0px 0px 20px;
+/** ------------------------------------------------
+	RESUME WEBSITE SECTIONS
+	------------------------------------------------**/
+
+#resumeWrapper {
+	height: 280px;
+	width: 250px;
+	float: right;
+	background-color: red;
+}
+
+#resumeText {
+	margin-right: 260px;
+	height: 290px;
+}
+
+/** ------------------------------------------------
+	TI SECTIONS
+	------------------------------------------------**/
+
+#tiWrapper {
+	height: 280px;
+	width: 250px;
+	float: right;
+	background-color: red;
+}
+
+#tiText {
+	margin-right: 260px;
+	height: 290px;
 }

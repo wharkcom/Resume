@@ -3,13 +3,13 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Resume - William Harkcom</title>
 </head>
 
 <body id='body'>
     <div id='pageContainer'>
-
+    <!--Header Section-->
         <div id='topBar'>
             <div class='topSideContainer'>
                 <div id='picture'><img src='headshot2.jpg' alt='me' /></div>
@@ -22,22 +22,31 @@
                     <ul>
                         <li><div>Email:</div><div>w.harkcom@gmail.com</div></li>
                         <li><div>Cell:</div><div>717-333-7847</div></li>
-                        <li><div>Code:</div><div><a href='http://www.github.com/wharkcom' target='_blank'>github.com/wharkcom</a></div></li>
+                        <li><div>Code:</div><div><a href='//www.github.com/wharkcom' target='_blank'>github.com/wharkcom</a></div></li>
                     </ul>
                 </div>
             </div>
-        </div> <!--Top Bar-->
+        </div>
 
         <div id='menu1'>
             <div id='resumeMenu' value='resume' class='menuOption selected'>Resume</div>
             <div id='projectsMenu' value='projects' class='menuOption'>Projects</div>
-            <div id='scienceMenu' class='menuOption'>Science</div>
+            <div id='scienceMenu' value='science' class='menuOption'>Science</div>
+            <div id='hobbiesMenu' value='hobbies' class='menuOption'>Hobbies</div>
         </div>
 
-        <!--Resume Section-->
+    <!--Resume Section-->
         <div id='resume' class='resumeSection hidden'>
-        <!--Education Section Begins-->
-            <h2 id='education'>EDUCATION
+        <!--Education Section-->
+            <h2 id='overview'>Overview
+                <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
+            </h2>
+            <div class='wrapper'>
+
+            </div>
+
+        <!--Education Section-->
+            <h2 id='education'>Education
                 <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
             </h2>
             <div class='wrapper'>
@@ -56,7 +65,7 @@
                             </ul>
                         </li>
                     </ul>
-                </div> <!--Cornell Wrapper-->
+                </div>
 
                 <h3 id='vt'>Virginia Tech<em class='floatRight'>2003 - 2007</em></h3>
                 <div class='wrapper'>
@@ -81,11 +90,34 @@
                             </ul>
                         </li>
                     </ul>
-                </div> <!--VT Wrapper-->
-            </div> <!--Education Wrapper-->
+                </div>
 
-        <!--Skills Section Begins-->
-            <h2 id='skills'>SKILLS
+                <h3 id='indy'>Independent Coursework</h3>
+                <div class='wrapper'>
+                    <ul>
+                        <li><a href="//www.coursera.org/course/ml" target='_blank'>Coursera: Machine Learning</a>
+                            <ul>
+                                <li>Topics included linear and logistic regression, neural networks, support vector machines, clustering, anomaly detection, and recommender systems.</li>
+                                <li>Completed programming exercises implementing these algorithms in Matlab.</li>
+                            </ul><br>
+                        </li>
+                        <li><a href="//www.codecademy.com/wharkcom" target='_blank'>Codeacademy</a>
+                            <ul>
+                                <li>Completed courses in HTML, CSS, Javascript, jQuery, and Python.</li>
+                            </ul><br>
+                        </li>
+                        <li><a href="//rosalind.info/users/w.harkcom/" target='_blank'>Rosalind</a>
+                            <ul>
+                                <li>A platform for learning bioinformatics through problem solving.</li>
+                                <li>Implemented string processing algorithms in python to manipulate sequences of DNA, RNA, and protein.</li>
+                            </ul><br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        <!--Skills Section-->
+            <h2 id='skills'>Skills
                 <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
             </h2>
             <div class='wrapper'>
@@ -123,7 +155,7 @@
                             <li>Linux (basic)</li>
                         </ul>
 
-                </div> <!--Technical Skills Wrapper-->
+                </div>
 
                 <h3 id='generalSkills'>General Skills</h3>
                 <div class='wrapper'>
@@ -156,10 +188,10 @@
                         </li>
                     </ul>
                 </div>
-            </div> <!--Skills Wrapper-->
+            </div>
         </div> 
 
-        <!--Project Section-->
+    <!--Project Section-->
         <div id='projects' class='resumeSection'>
         <!--TicTacToe Section-->
             <h2 id='tictactoe'>Ultimate Tic-Tac-Toe
@@ -168,45 +200,58 @@
             <div class='wrapper'>
                 <div id='tttImgWrap'>
                     <img src='tictactoe_small.png' alt='TicTacToe Image' />
-                    <a href='http://tictactoe.wharkcom.com' target='_blank'>
+                    <a href='//tictactoe.wharkcom.com' target='_blank'>
                         <div id='tttPlay' class='button'>Play Game</div>
                     </a>
                 </div>
 
                 <div id='tttContainer'>
                     <h4>Project Goals</h4>
-                    <p class='indentP'>
+                    <p>
                         The goal for this project was to strengthen my knowledge of JavaScript and Node.js by building a simple, web-based game. 
                     </p><br>
-                    <p class='indentP'>
+                    <p>
                         I chose Ultimate Tic-Tac-Toe so that I could focus on **fundamentals** rather than complex game logic.
                     </p><br>
-                    <p class='indentP'>
+                    <p>
                         This project demonstrates my ability to develop a complex web application.
-                    </p>
-                </div>
+                    </p><br>
 
-                <h4>Technologies Used</h4>
-                <div class='column'>
-                    <ul>
-                        <li>HTML/CSS</li>
-                        <li>Canvas</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                    </ul>
-                </div>
-                <div class='column'>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Socket.io</li>
-                    </ul>
+                    <h4>Technologies Used</h4>
+                    <div class='column'>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>Canvas</li>
+                            <li>JavaScript</li>   
+                        </ul>
+                    </div>
+                    <div class='column'>
+                        <ul>
+                            <li>jQuery</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                        </ul>
+                    </div>
+                    <div class='column'>
+                        <ul>
+                            <li>Socket.io</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <h4>Design</h4>
-                <p class='indentP'>
-                    Talk about design here
-                </p>
+                <p>
+                    The core game is written entirely in JavaScript. I used Node.js to run the server along with Express and Socket.io to serve files and handle communication between the client and the server. 
+                </p><br>
+                <p>
+                    The game is displayed using Canvas, and I use HTML, CSS, and jQuery to handle user interaction, menus, and popups.
+                </p><br>
+                <p>
+                    The game features a simple lobby that allows users to log in and play against a specific opponent. Games are saved automatically and users can reload a game in the event of a disconnect.
+                </p><br>
+                <p>
+                    In the future, I would like to incorporate authenticated login and a database to store user information and saved games. I would also like to add the ability to chat and observe active games.
+                </p><br>
             </div>
 
         <!--Zombies Section-->
@@ -222,7 +267,7 @@
 
                 <div id='zombieText'>
                     <h4>Project Goals</h4>
-                    <p class='indentP'>
+                    <p>
                         Stuff about goals here
                     </p><br>
 
@@ -239,11 +284,106 @@
                     </div>
                 </div>
                 <h4>Design</h4>
-                <p class='indentP'>
+                <p>
                     Talk about design stuff here
                 </p><br>
             </div>
-        </div> <!--End Projects Container-->
+
+        <!--Resume Website Section-->
+            <h2 id='resumeWebsite'>Resume Website
+                <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
+            </h2>
+            <div class='wrapper'>
+
+                <div id='resumeWrapper'>
+                    
+                </div>
+
+                <div id='resumeText'>
+                    <h4>Project Goals</h4>
+                    <p>
+                        Stuff about goals here
+                    </p><br>
+
+                    <h4>Technologies Used</h4>
+                    <div class='column'>
+                        <ul>
+                            <li>Processing</li>
+                        </ul>
+                    </div>
+                    <div class='column'>
+                        <ul>
+                            <li>Processing.js</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4>Design</h4>
+                <p>
+                    Talk about design stuff here
+                </p><br>
+            </div>
+
+        <!--Twilight Imperium Section-->
+            <h2 id='ti'>Twilight Imperium
+                <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
+            </h2>
+            <div class='wrapper'>
+
+                <div id='tiWrapper'>
+                    
+                </div>
+
+                <div id='tiText'>
+                    <h4>Project Goals</h4>
+                    <p>
+                        Stuff about goals here
+                    </p><br>
+
+                    <h4>Technologies Used</h4>
+                    <div class='column'>
+                        <ul>
+                            <li>Processing</li>
+                        </ul>
+                    </div>
+                    <div class='column'>
+                        <ul>
+                            <li>Processing.js</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4>Design</h4>
+                <p>
+                    Talk about design stuff here
+                </p><br>
+            </div>
+        </div>
+
+    <!--Science Section-->
+        <div id='science' class='resumeSection hidden'>
+        <!--PhD Thesis Section-->
+            <h2 id='phd'>PhD Research
+                <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
+            </h2>
+            <div class='wrapper'>
+            </div>
+
+        <!--Undergrad Section-->
+            <h2 id='undergrad'>Undergraduate Research
+                <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
+            </h2>
+            <div class='wrapper'>
+            </div>
+        </div>
+
+    <!--Hobbies Section-->
+        <div id='hobbies' class='resumeSection hidden'>
+        <!--3D Modeling Section-->
+            <h2 id='phd'>3D Modeling
+                <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
+            </h2>
+            <div class='wrapper'>
+            </div>
+
     </div> <!--Page Container-->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
