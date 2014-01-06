@@ -271,7 +271,7 @@ p {
 
 #zombieText {
 	margin-right: 260px;
-	height: 290px;
+	height: 305px;
 }
 
 /** ------------------------------------------------
@@ -279,15 +279,16 @@ p {
 	------------------------------------------------**/
 
 #resumeWrapper {
-	height: 280px;
-	width: 250px;
+	height: 170px;
+	width: 302px;
 	float: right;
-	background-color: red;
+	border: 1px solid black;
+	margin: 5px;
 }
 
 #resumeText {
-	margin-right: 260px;
-	height: 290px;
+	margin-right: 315px;
+
 }
 
 /** ------------------------------------------------
