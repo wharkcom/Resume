@@ -220,6 +220,7 @@ li div {
 
 #tttContainer {
 	margin-right: 315px;
+	height: 225px;
 
 }
 
@@ -296,13 +297,15 @@ p {
 	------------------------------------------------**/
 
 #tiWrapper {
-	height: 280px;
-	width: 250px;
 	float: right;
-	background-color: red;
+	margin: 20px 5px 10px;
 }
 
 #tiText {
-	margin-right: 260px;
-	height: 290px;
+	margin-right: 300px;
+}
+
+#footer {
+	background-color: white;
+	height: 50px;
 }
