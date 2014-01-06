@@ -8,6 +8,7 @@ $(document).ready(function() {
 		href = $(this).attr('value');
 		window.history.pushState(null, null, '?'+href);
 		loadContent(href);
+		$(window).scrollTop(0);
 	});
 
 	//Resume Section
