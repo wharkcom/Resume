@@ -24,6 +24,8 @@ $(document).ready(function() {
 		var pI = Processing.getInstanceById('zombieCanvas');
 		pI.setup();
 	});
+
+	
 });
 
 //Show correct resume section
@@ -37,6 +39,16 @@ function loadContent(href) {
 
 //Return to right location using back button
 $(window).bind("popstate", function() {
-    link = location.href.replace(/^.*[\\/]/, ""); // get filename only
-    loadContent(link.substring(1));
+	link = location.href.replace(/^.*[\\/]/, ""); // get filename only
+
+	if(link) {
+		loadContent(link.substring(1));
+		console.log(link);
+	} else {
+		console.log('No link, load resume');
+		loadContent('resume');
+	}
+    
+    
+    
 });

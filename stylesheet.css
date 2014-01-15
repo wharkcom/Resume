@@ -89,6 +89,10 @@
 	color: #7d7d7d;
 }
 
+#contactInfo a:hover {
+	text-decoration: underline;
+}
+
 #contactInfo ul li div {
 	display: inline-block;
 	margin: 0px;
@@ -177,7 +181,7 @@ h3 {
 }
 
 h4 {
-	margin: 0px 0px 10px 20px;
+	margin: 0px 0px 0px 20px;
 	border-bottom: 1px solid #ddd;
 	padding: 4px 0px;
 }
@@ -224,10 +228,6 @@ li div {
 
 }
 
-#projects div h4 {
-	margin: 0px 0px 0px 20px;
-}
-
 .column {
 	display: inline-block;
 	vertical-align: top;
@@ -235,7 +235,7 @@ li div {
 }
 
 p {
-	margin: 0px 20px 0px 30px;
+	margin: 13px 20px 0px 30px;
 }
 
 /** ------------------------------------------------
@@ -272,7 +272,6 @@ p {
 
 #zombieText {
 	margin-right: 260px;
-	height: 305px;
 }
 
 /** ------------------------------------------------
@@ -308,4 +307,10 @@ p {
 #footer {
 	background-color: white;
 	height: 50px;
+}
+
+#mayaVid {
+	width: 640px;
+	height: 360px;
+	margin: 10px 0px 10px 20px;
 }

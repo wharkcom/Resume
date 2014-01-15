@@ -37,7 +37,7 @@
 
     <!--Resume Section-->
         <div id='resume' class='resumeSection hidden'>
-        <!--Education Section-->
+        <!--Overview Section-->
             <h2 id='overview'><a id='overview2'>Overview</a>
                 <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
             </h2>
@@ -45,7 +45,7 @@
                 <h4>About Me</h4>
                 <p>
                    I am a PhD student in biomedical science at Cornell University, and I am preparing to transition to a career in software development upon graduation this spring. While I have enjoyed biomedical research, I have long had an interest in technology and programming, and I am eager to apply my skill set to new problems in the next stage of my career.
-                </p>
+                </p><br>
             </div>
 
         <!--Education Section-->
@@ -168,30 +168,40 @@
                 <h3 id='generalSkills'>General Skills</h3>
                 <div class='wrapper'>
                     <h4>Leadership</h4>
+                        <div class="column">
                         <ul>
                             <li>I chaired a research symposium for the local scientific community.</li>
                             <li>I organized recruitment of new graduate students.</li>
                             <li>I actively train and mentor new students.</li>
                         </ul>
+                        </div>
                     <h4>Creativity in Problem Solving</h4>
+                        <div class="column">
                         <ul>
                             <li>I developed a novel method for studying nerve degeneration. My method bridges the gap between <em>in vitro</em> (fast and cheap) and <em>in vivo</em> (long and expensive) methods.</li>
                             <li>I used 3D printing to create equipment that increased experiment efficiency - from 1 sample at a time to 96.</li>
                         </ul>
+                        </div>
                     <h4>Communication</h4>
+                        <div class="column">
                         <ul>
                             <li>I present my work at weekly meetings where I receive feedback on my projects and provide suggestions to others.</li>
                             <li>I am a primary author on two published scientific papers with a third in preparation. (<a href="//www.ncbi.nlm.nih.gov/pubmed/?term=harkcom+wt">Pubmed</a>)</li>
                             <li>I have presented my research to experts from around the world.</li>
                         </ul>
+                        </div>
                     <h4>Collaboration</h4>
+                        <div class="column">
                         <ul>
                             <li>I mange a cross-disciplinary collaboration between biologists, neuroscientists, and bioinformaticists.</li>
                         </ul>
+                        </div>
                     <h4>Learning</h4>
+                        <div class="column">
                         <ul>
                             <li>Lead discussions of new scientific literature and techniques at weekly group meetings where we discuss how to incorporate new findings into our work.</li>
-                        </ul>    
+                        </ul> 
+                        </div>   
                 </div>
             </div>
         </div> 
@@ -241,13 +251,13 @@
                 <h4>Design</h4>
                 <p>
                     The core game is written entirely in JavaScript. I used Node.js to run the server along with Express and Socket.io to serve files and handle communication between the client and the server. 
-                </p><br>
+                </p>
                 <p>
                     The game is displayed using Canvas, and I use HTML, CSS, and jQuery to handle user interaction, menus, and popups.
-                </p><br>
+                </p>
                 <p>
                     The game features a simple lobby that allows users to log in and play against a specific opponent. Games are saved automatically and users can reload a game in the event of a disconnect.
-                </p><br>
+                </p>
                 <p>
                     In the future, I would like to incorporate authenticated login and a database to store user information and saved games. I would also like to add the ability to chat and observe active games.
                 </p><br>
@@ -285,15 +295,15 @@
                     <h4>Design</h4>
                     <p>
                         The zombie simulation generates a number of 'persons', most of which begin as normal while a few are infected. Normal persons move away from the infected, and the infected move toward the normal. As soon as they touch, the infection spreads.
-                    </p><br>
+                    </p>
                     <p>
                         By adjusting the amount of random movement and the speed of the actors, you can observe different effects on the rate of spread.
                     </p>
                 </div>
                 <div>
-                    <br><p>
+                    <p>
                         The processing file is then embedded into the page using Processing.js. This library allows for easy visualization as well as interaction between JavaScript and Processing.
-                    </p><br>
+                    </p>
                     <p>
                         While this example is quite simplistic, it demonstrates a powerful way to incorporate complex data simulations and visualizations into dynamic web applications.
                     </p><br>
@@ -333,10 +343,10 @@
                 <h4>Design</h4>
                 <p>
                     This site was built from scratch using primarily HTML and CSS. Simple JavaScript and jQuery handle interaction and navigation. 
-                </p><br>
+                </p>
                 <p>
                     The site takes advantage of the HTML5 history API to handle back and forward navigation without causing page refreshes. 
-                </p><br>
+                </p>
                 <p>
                     It does not currently offer support for older browsers, but I plan to update this in the future.
                 </p><br>
@@ -377,10 +387,10 @@
                 <h4>Design</h4>
                 <p>
                     I initially planned to build this game using a similar framework as my Tic-Tac-Toe game. In addition, I incorporated Kinetic.js to handle display and interaction with Canvas. 
-                </p><br>
+                </p>
                 <p>
                     Code for a preliminary version can be found on <a href="https://github.com/wharkcom/Twilight-Imperium" target="_blank">github</a>. As this game is a considerable step up in complexity from my previous work, I now recognize the need for a more robust framework, and I plan to learn and incorporate Angular.js for that reason.
-                </p><br>
+                </p>
                 <p>
                     This is an ongoing project and will hopefully see many updates in the future.
                 </p>
@@ -395,16 +405,43 @@
             </h2>
             <div class='wrapper'>
                 <h4>Neuroscience</h4>
-                <p>
+                <p>Diseases such as Alzheimer’s, Parkinson’s, and Huntington’s, as well as many others, fall into a broad category of neurodegenerative disorders. While these diseases are the result of different causes and affect different regions of the brain, they also share many similarities. One prominent similarity is that they often feature ‘dying back’ degeneration, where the axonal projection degenerates before the cell body. One of the primary research topics for my PhD involves understanding the mechanism by which this process occurs.
                 </p>
+                <p>In particular, we are interested in NAD, a small molecule involved in metabolism and other cellular processes. In addition to many other health benefits, supplementing neurons with NAD can greatly delay axon degeneration and the onset of neurodegenerative disorders. We discovered an unknown function of NAD in stabilizing the microtubule cytoskeleton. Microtubules are critical for proper axonal function, and they are disrupted early after axon injury. With NAD treatment, this disruption no longer occurs. 
+                </p>
+                <p>To explore this mechanism further, we developed a novel assay to study axon degeneration. Our assay bridges the gap between <em>in vitro</em> methods, which do not always reflect true conditions, and <em>in vivo</em> methods, which are more accurate but far more time consuming. Our method utilizes a slice culture system, where axons grow in a thin slice of tissue. This provides an environment more similar to one <em>in vivo</em> but is quick and amenable to experimental manipulation. Using this technique, we identified an enzyme that is critical for the function of NAD, suggesting new avenues for therapeutic intervention.
+                </p>
+                <div class="column">
+                    <ul>
+                        <li><a href="//www.jaffreylab.org/Pages/default.aspx" target="_blank">Jaffrey Lab at Cornell University</a></li>
+                        <li>Manuscript in preparation on the mechanism of NAD in axon degeneration.
+                        </li>
+                    </ul>
+                </div>
 
                 <h4>Cell Biology</h4>
-                <p>
+                <p>Our discoveries on the role of NAD in axon degeneration led to additional research in basic cellular biology. In particular, we found that NAD enhances the dynamic instability of microtubules, a sign of cellular health. Additionally, NAD can prevent microtubule destabilization by numerous chemotherapeutic drugs which target the microtubules. This suggests, similarly to our data in axons, that NAD has a previously unrecognized role in regulating microtubules. Importantly, we found that enhancing NAD levels reduces the sensitivity of cells to microtubule-targeting chemotherapeutics, suggesting that lowering NAD levels may instead increase sensitivity. Our data also suggest that genetic screening of tumors could identify ones with high or low levels of NAD and suggest treatments that would be most effective.
                 </p>
+                <div class="column">
+                    <ul>
+                        <li>Manuscript in preparation on the role of NAD in microtubule regulation.
+                        </li>
+                    </ul>
+                </div>
 
                 <h4>Physiology</h4>
-                <p>
+                <p>Prior to joining my final thesis lab, I also studied ion channel physiology. In particular, I was interested in the role of ion channel trafficking in regulating cellular function. Ion channels are critical for proper functioning of the heart and brain. Disruption of normal function can cause diseases such as cardiac arrhythmia and epilepsy. A common mechanism by which ion channels are disrupted is via mutations that prevent proper trafficking within the cell. This often results in ion channels that never make it to the surface of the cell where they normally function. This is in contrast to ion channel mutations that cause a change in the conductance of the channel. The majority of ion channel therapeutics target channel conductance, however, in the case of trafficking defects, targeted therapeutics could be far more effective.
                 </p>
+                <div class="column">
+                    <ul>
+                        <li>Abbott Lab (formerly) at Cornell University</li>
+                        <li>Harkcom, W.T. and Abbott, G.W. (2010) 
+                            <a href="//www.ncbi.nlm.nih.gov/pmc/articles/PMC2921896/" target="_blank">"Emerging concepts in the pharmacogenomics of arrhythmias: ion channel trafficking."</a>
+                            <em>Expert Rev. Cardiovasc. Ther.</em> 8 (8): 1161-1173.
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
         <!--Undergrad Section-->
@@ -414,10 +451,10 @@
             <div class='wrapper'>
                 <h4>Computational Drug Discovery</h4>
                 <p>My undergraduate research in the lab of Dr. David Bevan focused on using computer simulations for drug discovery. In particular, we were interested in the protein monoamine oxidase B (MAOB). MAOB is an enzyme that functions in the oxidation of neurotransmitters and other small molecules, and as a byproduct, this process increases oxidative stress in the brain. This action has been implicated in Parkinson’s disease, and several MAOB inhibitors have been developed that slow progression of the disease.
-                </p><br>
-                <p>Unfortunately, many of these drugs suffer from a lack of specificity, resulting in unwanted side effects. New drugs with more specific binding could reduce these side effects and improve drug efficacy. To this end, we developed and validated a method for screening new drugs in silico.
-                </p><br>
-                <p>By optimizing parameters for drug binding, we were able to validate out method using a panel of drugs with known binding affinities. This provides a foundation for high-throughput drug screening efforts. We also identified key residues within the enzyme that contribute to drug binding. This knowledge can be used for rational drug design as an alternative to high-throughput screening.
+                </p>
+                <p>Unfortunately, many of these drugs suffer from a lack of specificity, resulting in unwanted side effects. New drugs with more specific binding could reduce these side effects and improve drug efficacy. To this end, we developed and validated a method for screening new drugs <em>in silico</em>.
+                </p>
+                <p>By optimizing parameters for drug binding, we were able to validate our method using a panel of drugs with known binding affinities. This provides a foundation for high-throughput drug screening efforts. We also identified key residues within the enzyme that contribute to drug binding. This knowledge can be used for rational drug design as an alternative to high-throughput screening.
                 </p>
                 <div class="column">
                     <ul>
@@ -434,10 +471,16 @@
     <!--Hobbies Section-->
         <div id='hobbies' class='resumeSection hidden'>
         <!--3D Modeling Section-->
-            <h2 id='phd'>3D Modeling
+            <h2 id='graphics'>Graphic Design
                 <em class='expandIndicator hidden'>+</em><em class='expandIndicator'>-</em>
             </h2>
             <div class='wrapper'>
+                <h4>3D Modeling and Animation</h4>
+                <p>One of my favorite hobbies is 3D modeling. In the past I’ve used Bryce 3D and Rhino 3D, but most recently I’ve been learning Autodesk’s Maya software. Below you can see one of my recent animations (created with the help of Digital Tutors).
+                </p>
+
+                <iframe src="http://www.youtube.com/embed/fu6RFui6t24?enablejsapi=1&origin=http://resume.wharkcom.com" id="mayaVid">
+                </iframe>
             </div>
         </div>
 
